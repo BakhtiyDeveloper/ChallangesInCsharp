@@ -18,3 +18,9 @@ static int GetSumTwoNumbers(int firstNumber, int secondNumber)
 {
     return firstNumber + secondNumber;
 }
+
+Console.WriteLine("vfvfvfvf");
+
+Console.WriteLine("fvvfvvfv");
+
+Console.WriteLine("ddcdcdscdcd");
