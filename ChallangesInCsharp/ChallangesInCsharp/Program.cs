@@ -67,6 +67,7 @@ static int GetSurfaceRectangle(int surfaceA, int surfaceB)
 
 */
 
+/*
 Console.WriteLine("Enter diametr of cirkle:  ");
 string userInputDiametrCircle = Console.ReadLine();
 double diametrCirkle = Convert.ToDouble(userInputDiametrCircle);
@@ -78,4 +79,26 @@ static double GetDiametrCircle(double diametrCircle)
 {
     return double.Pi * diametrCircle;
 }
+*/
 
+/*
+Find the volume and total surface area of ​​a cube given side a
+*/
+
+Console.WriteLine("Enter the side of cube :");
+
+string userInputSideA = Console.ReadLine();
+double sideA = Convert.ToDouble(userInputSideA);
+
+Console.WriteLine($"The Volume : {GetVolume(sideA)}");
+Console.WriteLine($"The total surface area : {GetTotalSurfaceArea(sideA)}");
+
+static double GetVolume(double sideA)
+{
+    return Math.Pow(sideA, 3);
+}
+
+static double GetTotalSurfaceArea(double sideA)
+{
+    return 6 * (sideA * sideA);
+}
