@@ -109,7 +109,7 @@ static double GetTotalSurfaceArea(double sideA)
    Determine its volume and total surface area
 */
 
-
+/*
 Console.WriteLine("Enter the first roof of the parallelepiped: ");
 string userInputParalOne = Console.ReadLine();
 int sideParalOne = Convert.ToInt32(userInputParalOne);
@@ -125,7 +125,6 @@ int sideParalThree = Convert.ToInt32(userInputParalThree);
 Console.WriteLine($"Volume parallelepipe: {GetVolumeParallelepiped(sideParalOne, sideParalTwo, sideParalThree)}");
 Console.WriteLine($"Full surface parallelepipe: {GetFullSurfaceParallelepiped(sideParalOne, sideParalTwo, sideParalThree)}");
 
-
 static int GetVolumeParallelepiped(int sideParalOne, int sideParalTwo, int sideParalThree)
 {
     return sideParalOne * sideParalTwo * sideParalThree;
@@ -136,8 +135,31 @@ static int GetFullSurfaceParallelepiped(int sideParalOne, int sideParalTwo, int 
     return 2 * (sideParalOne * sideParalTwo + sideParalTwo * sideParalThree + sideParalOne * sideParalThree); 
 }
 
+*/
 
+/* 
+  Check and determine the radius of the circle
+*/
 
+const double PI = 3.14;
+
+Console.WriteLine("enter the radius of the circle");
+string userInput = Console.ReadLine();
+double radius = Convert.ToDouble(userInput);
+
+Console.WriteLine($"the Length of the Circle {GetLengthCircle(radius)}");
+Console.WriteLine($"the surface of the Circle {GetSurfaceCircle(radius)}");
+
+static double GetLengthCircle(double radius)
+
+{
+    return 2 * PI * radius;
+}
+
+static double GetSurfaceCircle(double radius)
+{
+    return PI * (radius * radius);
+}
 
 
 
