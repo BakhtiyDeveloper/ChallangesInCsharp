@@ -167,6 +167,7 @@ static double GetSurfaceCircle(double radius)
 Determine the arithmetic mean of given numbers A and B 
 */
 
+/*
 Console.WriteLine("Enter the first number : ");
 string userInputOne = Console.ReadLine();
 double firstNumber = Convert.ToDouble(userInputOne);
@@ -181,7 +182,37 @@ static double GetArithmeticMean(double firstNumber, double secondNumber)
 {
     return (firstNumber + secondNumber) / 2;
 }
+*/
 
+/* 
+Find the geometric mean of 2 non-negative numbers 
+*/
+
+Console.WriteLine("Enter a first positive number");
+string userInputOne = Console.ReadLine();
+double firstNumber = Convert.ToDouble(userInputOne);
+
+Console.WriteLine("Enter a second positive number");
+string userInputTwo = Console.ReadLine();
+double secondNumber = Convert.ToDouble(userInputTwo);
+
+Console.WriteLine($"The Geometric mean {firstNumber} and {secondNumber} : {GetGeometricMean(firstNumber, secondNumber)}");
+
+static double GetGeometricMean(double firstNumber, double secondNumber)
+{
+    double geometricMean = 0;
+    if (firstNumber >= 0 && secondNumber >= 0)
+    {
+        double number = firstNumber * secondNumber;
+        geometricMean = Math.Sqrt(number);
+
+    }
+    else
+    {
+        Console.WriteLine("Enter the positive number !!!");
+    }
+    return geometricMean;
+}
 
 
 
