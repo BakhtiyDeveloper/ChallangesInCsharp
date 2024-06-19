@@ -141,14 +141,15 @@ static int GetFullSurfaceParallelepiped(int sideParalOne, int sideParalTwo, int 
   Check and determine the radius of the circle
 */
 
+/*
 const double PI = 3.14;
 
-Console.WriteLine("enter the radius of the circle");
+Console.WriteLine("Enter the radius of the circle");
 string userInput = Console.ReadLine();
 double radius = Convert.ToDouble(userInput);
 
-Console.WriteLine($"the Length of the Circle {GetLengthCircle(radius)}");
-Console.WriteLine($"the surface of the Circle {GetSurfaceCircle(radius)}");
+Console.WriteLine($"The Length of the Circle {GetLengthCircle(radius)}");
+Console.WriteLine($"The surface of the Circle {GetSurfaceCircle(radius)}");
 
 static double GetLengthCircle(double radius)
 
@@ -159,6 +160,26 @@ static double GetLengthCircle(double radius)
 static double GetSurfaceCircle(double radius)
 {
     return PI * (radius * radius);
+}
+*/
+
+/* 
+Determine the arithmetic mean of given numbers A and B 
+*/
+
+Console.WriteLine("Enter the first number : ");
+string userInputOne = Console.ReadLine();
+double firstNumber = Convert.ToDouble(userInputOne);
+
+Console.WriteLine("Enter the second number : ");
+string userInputTwo = Console.ReadLine();
+double secondNumber = Convert.ToDouble(userInputTwo);
+
+Console.WriteLine($"The arithmetic mean of given numbers {firstNumber} and {secondNumber}: {GetArithmeticMean(firstNumber, secondNumber)}");
+
+static double GetArithmeticMean(double firstNumber, double secondNumber)
+{
+    return (firstNumber + secondNumber) / 2;
 }
 
 
