@@ -1,4 +1,6 @@
-﻿
+﻿using System;
+using System.Linq;
+
 /* 
 A+B 
 It will be necessary to calculate the sum of integers A and B. 
@@ -188,6 +190,7 @@ static double GetArithmeticMean(double firstNumber, double secondNumber)
 Find the geometric mean of 2 non-negative numbers 
 */
 
+/*
 Console.WriteLine("Enter a first positive number");
 string userInputOne = Console.ReadLine();
 double firstNumber = Convert.ToDouble(userInputOne);
@@ -201,6 +204,7 @@ Console.WriteLine($"The Geometric mean {firstNumber} and {secondNumber} : {GetGe
 static double GetGeometricMean(double firstNumber, double secondNumber)
 {
     double geometricMean = 0;
+
     if (firstNumber >= 0 && secondNumber >= 0)
     {
         double number = firstNumber * secondNumber;
@@ -209,19 +213,88 @@ static double GetGeometricMean(double firstNumber, double secondNumber)
     }
     else
     {
-        Console.WriteLine("Enter the positive number !!!");
+        Console.WriteLine("Please enter the positive number!!!");
     }
     return geometricMean;
 }
+*/
 
+/*
+  Given two non-zero numbers. Their sum, product and determine the square of each.
+*/
 
+Console.WriteLine("Enter first positive number");
+string userInputOne = Console.ReadLine();
+int firstNumber = Convert.ToInt32(userInputOne);
 
+Console.WriteLine("Enter second positive number");
+string userInputTwo = Console.ReadLine();
+int secondNumber = Convert.ToInt32(userInputTwo);
 
+Console.WriteLine($"Sum of {firstNumber} and {secondNumber} is: {GetSumNumber(firstNumber, secondNumber)}");
+Console.WriteLine($"Multiple of {firstNumber} and {secondNumber} is: {GetMultipleNumber(firstNumber, secondNumber)}");
+Console.WriteLine($"Square of {firstNumber} is: {GetSquareNumberOne(firstNumber)}");
+Console.WriteLine($"Square of {secondNumber} is: {GetSquareNumberTwo(secondNumber)}");
 
+static int GetSumNumber(int firstNumber, int secondNumber) 
+{
+    int result = 0;
 
+    if (firstNumber > 0 && secondNumber > 0)
+    {
+        result = firstNumber + secondNumber;
+    }
+    else
+    {
+        Console.WriteLine("Please enter the positive number!!!");
+    }
+    return result;
+}
 
+static int GetMultipleNumber(int firstNumber, int secondNumber)
+{
+    int result = 0;
 
+    if (firstNumber > 0 && secondNumber > 0)
+    {
+        result = firstNumber * secondNumber;
+    }
+    else
+    {
+        Console.WriteLine("Please enter the positive number!!!");
+    }
+    return result;
+}
 
+static int GetSquareNumberOne(int firstNumber)
+{
+    int result = 0;
+
+    if (firstNumber > 0)
+    {
+        result = firstNumber * firstNumber;
+    }
+    else
+    {
+        Console.WriteLine("Please enter the positive number!!!");
+    }
+    return result;
+}
+
+static int GetSquareNumberTwo(int secondNumber)
+{
+    int result = 0;
+
+    if (secondNumber > 0)
+    {
+        result = secondNumber * secondNumber;
+    }
+    else
+    {
+        Console.WriteLine("Please enter the positive number!!!");
+    }
+    return result;
+}
 
 
 
