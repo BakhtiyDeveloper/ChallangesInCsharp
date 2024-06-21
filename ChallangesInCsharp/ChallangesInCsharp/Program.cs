@@ -223,6 +223,7 @@ static double GetGeometricMean(double firstNumber, double secondNumber)
   Given two non-zero numbers. Their sum, product and determine the square of each.
 */
 
+/*
 Console.WriteLine("Enter first positive number");
 string userInputOne = Console.ReadLine();
 int firstNumber = Convert.ToInt32(userInputOne);
@@ -295,6 +296,6 @@ static int GetSquareNumberTwo(int secondNumber)
     }
     return result;
 }
-
+*/
 
 
